@@ -1,0 +1,14 @@
+img{
+    position: center;
+    max-width: 105%;
+    height: auto;
+}
+
+body{
+    color: black;
+}
+
+#aboutme{
+    background-color:gray;
+    padding: 0;
+    }

@@ -1,0 +1,50 @@
+
+
+<div id="home">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="topnav">
+    <button id = "menubutton"
+    (click)="openNav()"
+    class = "navbutton">Menu </button>
+
+    <!-- <i class="fa fa-camera-retro"><link href="https://instagram.com"</link> </i>  -->
+</div> 
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" 
+        (click)="closeNav()">&times;</a>
+         <a href="#">Home</a>
+         <a href="#">My Weather App</a>
+         <a href="#">About Me</a>
+         <a href="../../assets/Resume.pdf">Resume</a>
+         <a href="#">Contact
+         </a>
+    </div>
+
+      <div class="row">
+          <div id="name" class="col-md-6">
+            <div class="d-flex flex-column justify-content-center align-items-center h-100">
+              <h1 class="heading display-3">My Name is Eni</h1>
+              <h4 class="subheading font-weight-bold">Welcome to my Application</h4>
+              </div>
+          </div>
+    
+          <div id="img" class="col-md-6">
+            <div class="view">
+              <img src="https://images.pexels.com/photos/325045/pexels-photo-325045.jpeg" class="img-fluid">
+              <div class="mask flex-center hm-gradient">
+              </div>
+          </div>
+          
+          </div>
+        </div> 
+        <app-weather></app-weather>
+        <app-contact></app-contact>
+
+        <!-- <a class="nav-link"><mdb-icon fab icon="instagram"></mdb-icon></a> -->
+</div>
+
+
+
+
+    
