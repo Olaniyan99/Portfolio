@@ -8,7 +8,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './contact/contact.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { WeatherComponent } from './weather/weather.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
+import {BodyComponent} from './body/body.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     homeComponent,
     ContactComponent,
     WeatherComponent,
-    AboutmeComponent,
+    BodyComponent,
   ],
   imports: [
     BrowserModule,
