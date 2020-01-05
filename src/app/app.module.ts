@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { WeatherComponent } from './weather/weather.component';
 import {BodyComponent} from './body/body.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -21,6 +22,7 @@ import {BodyComponent} from './body/body.component';
     BodyComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,

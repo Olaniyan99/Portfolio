@@ -1,6 +1,7 @@
-<div class="row">
-    <div class="col-md-6">
-      <h3 class="text-center my-4">Search for Weather:</h3>
+
+<div class="home">
+    <div class="weather-container">
+      <h3 class="text-center my-4" style="padding-top:30px;">Search for Weather:</h3>
       <form
         [formGroup]="weatherSearchForm"
         (ngSubmit)="sendToAPIXU(weatherSearchForm.value)">
@@ -9,8 +10,7 @@
             class="form-control"
             type="text"
             id="weatherLocation"
-            aria-describedby="weatherLocation"
-            placeholder="Please input a Location"
+            placeholder="Please enter a location or zipcode"
             formControlName="location"
           />
         </div>
@@ -20,9 +20,9 @@
           </button>
         </div>
       </form>
-    </div>
-    <div class="col-md-6">
-      <h3 class="text-center my-4">Weather Details:</h3>
+
+
+      <h3 class="text-center my-4" style="padding-top:80px;">Weather Details:</h3>
       <p class="text-center">
         <strong>Location Searched:</strong> {{this.weatherData?.location.name}} {{ this.weatherData?.location.region }}, {{ this.weatherData?.location.country }}
       </p>
@@ -38,32 +38,7 @@
       <p class="text-center">
         <strong>Visibility:</strong> {{this.weatherData?.current.visibility}} Miles
       </p>
+
     </div>
   </div>
 
-
-
-
-
-
-  <!-- <p class="text-center">
-    Current weather conditions: {{ this.weatherData?.current}}.
-  </p>
-  <p class="text-center">
-    Temperature in Degrees Celsius: {{ this.weatherData?.current.temp_c }}
-  </p>
-  <p class="text-center">
-    Temperature in Degrees Farenheit: {{ this.weatherData?.current.temperature }}
-  </p>
-  <p class="text-center">
-    Feels like in Degrees Celsius: {{ this.weatherData?.current.feelslike_c
-    }}
-  </p>
-  <p class="text-center">
-    Feels like in Degrees Farenheit: {{
-    this.weatherData?.current.feelslike_f }}
-  </p>
-  <p class="text-center">
-    Location Searched: {{ this.weatherData?.location.name }}, {{
-    this.weatherData?.location.country }}.
-  </p> -->
